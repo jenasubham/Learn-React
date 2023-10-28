@@ -1,0 +1,21 @@
+.product-date{
+    
+    font-size: small;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+}
+.product-date_month{
+    font-size: 10px;
+    margin-top: 7px;
+    font-weight: 600;
+}
+
+.product-date_day{
+    font-size: 15px;
+    font-weight: bold;
+}

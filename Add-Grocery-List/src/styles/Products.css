@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products{
+    margin-top: 2rem;
+    background-color: rgb(211, 252, 64);
+    border-radius: 12px;
+    width: 100%;
+    padding-top:1rem;
+    padding-bottom:1rem;    
+}
