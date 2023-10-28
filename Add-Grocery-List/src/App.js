@@ -1,8 +1,11 @@
 import './App.css';
 import Products from './components/Products';
 import NewProduct from './components/NewProduct';
+import { useState } from 'react';
 function App() {
+
   const list = [
+
     {
       id:'p1',
       title: 'Moov Spray',
@@ -28,10 +31,18 @@ function App() {
       date: new Date(2020,3,12)
     }
   ];
+
+ const [ data, setData] = useState(list);
+
+ const addNewProduct = (newProduct) =>{
+   setData([...data,newProduct])
+   console.log(data);
+ }
+
   return (
     <>
-    <NewProduct/>
-    <Products items = {list}/>
+    <NewProduct onAddProduct = {addNewProduct} />
+    <Products items = {data}/>
     </>
   );
 }
